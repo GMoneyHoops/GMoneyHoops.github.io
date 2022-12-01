@@ -1,0 +1,50 @@
+{"questionlist":[
+    {"cardfront":"APP",
+    "cardback":"GATO"
+    },
+    {"cardfront":"Reset",
+    "cardback":"PERRO"
+    },
+    {"cardfront":"Left Possession",
+    "cardback":"CABALLO"
+    },
+    {"cardfront":"Right Possession",
+    "cardback":"CONEJO"
+    },
+    {"cardfront": "Before",
+    "cardback":"TIGRE"
+    },
+    {"cardfront":"After",
+    "cardback":"CANGURO"
+    },
+    {"cardfront":"That's my point of contact",
+    "cardback":"CANGURO"
+    },
+    {"cardfront":"Book it",
+    "cardback":"CANGURO"
+    },
+    {"cardfront":"Frame before",
+    "cardback":"CANGURO"
+    },
+    {"cardfront":"Frame after",
+    "cardback":"CANGURO"
+    },
+    {"cardfront":"Backwards one bookmark",
+    "cardback":"CANGURO"
+    },
+    {"cardfront":"Slow",
+    "cardback":"CANGURO"
+    },
+    {"cardfront":"Contact Loop",
+    "cardback":"CANGURO"
+    },
+    {"cardfront":"Intensity Loop",
+    "cardback":"CANGURO"
+    },
+    {"cardfront":"Let's check the APP",
+    "cardback":"CANGURO"
+    },
+    {"cardfront":"Pause",
+    "cardback":"CANGURO"
+    },
+   ]}
