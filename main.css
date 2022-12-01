@@ -10,10 +10,10 @@ html, body {
  src: url('Montserrat-Medium.ttf');
 }
 #activityTitle{
- text-align:center;
- font-size:38px;
- font-family:Montserrat,Arial;
- margin-top:50px;
+ text-align: center;
+ font-size: 38px;
+ font-family: Montserrat,Arial;
+ margin-top: 50px;
 }
 #cardArea{
  width:300px;
