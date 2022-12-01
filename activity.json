@@ -1,50 +1,56 @@
 {"questionlist":[
     {"cardfront":"APP",
-    "cardback":"GATO"
+    "cardback":"`"
     },
     {"cardfront":"Reset",
-    "cardback":"PERRO"
+    "cardback":"`"
     },
     {"cardfront":"Left Possession",
-    "cardback":"CABALLO"
+    "cardback":"1"
     },
     {"cardfront":"Right Possession",
-    "cardback":"CONEJO"
+    "cardback":"2"
     },
     {"cardfront": "Before",
-    "cardback":"TIGRE"
+    "cardback":"numpad+0"
     },
     {"cardfront":"After",
-    "cardback":"CANGURO"
+    "cardback":"numpad+."
     },
     {"cardfront":"That's my point of contact",
-    "cardback":"CANGURO"
+    "cardback":"b"
     },
     {"cardfront":"Book it",
-    "cardback":"CANGURO"
+    "cardback":"b"
     },
     {"cardfront":"Frame before",
-    "cardback":"CANGURO"
+    "cardback":"numpad+0"
     },
     {"cardfront":"Frame after",
-    "cardback":"CANGURO"
+    "cardback":"numpad+."
     },
     {"cardfront":"Backwards one bookmark",
-    "cardback":"CANGURO"
+    "cardback":"numpad+-"
+    },
+    {"cardfront":"Forwardwards one bookmark",
+    "cardback":"numpad++"
+    },
+    {"cardfront":"Recall last bookmark",
+    "cardback":"numpad++"
     },
     {"cardfront":"Slow",
-    "cardback":"CANGURO"
+    "cardback":"numpad+6"
     },
     {"cardfront":"Contact Loop",
-    "cardback":"CANGURO"
+    "cardback":"numpad+2"
     },
     {"cardfront":"Intensity Loop",
-    "cardback":"CANGURO"
+    "cardback":"numpad+8"
     },
     {"cardfront":"Let's check the APP",
-    "cardback":"CANGURO"
+    "cardback":"delete"
     },
     {"cardfront":"Pause",
-    "cardback":"CANGURO"
+    "cardback":"numpad+5"
     },
    ]}
