@@ -1,3 +1,7 @@
+$(document).ready(function(){
+  $("#status").val("hello there");
+  $("#a").attr("src", "APP.png");
+});
 // script.js
 $(document).ready(function() {
   var deck = new Array();
