@@ -31,7 +31,7 @@ $(document).ready(function() {
   function Init() {
     var card1 = {
       card: 1,
-      picture : "bugsbunny.jpg",
+      picture : "APP.png",
       answertext : "Bugs Bunny"
     };
     
