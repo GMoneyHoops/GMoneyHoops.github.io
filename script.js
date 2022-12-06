@@ -54,20 +54,56 @@ $(document).ready(function() {
     
     var card2 = {
       card: 2,
-      picture : "Reset.png",
-      answertext : "2"
+      picture : "Go-Live.png",
+      answertext : "l"
     };
     
     var card3 = {
       card: 3,
       picture : "Reset.png",
-      answertext : "3"
+      answertext : "`"
     };
 
     var card4 = {
       card: 4,
+      picture : "Left_possession.png",
+      answertext : "1"
+    };
+
+    var card5 = {
+      card: 5,
+      picture : "Right_possession.png",
+      answertext : "2"
+    };
+
+    var card6 = {
+      card: 6
       picture : "APP.png",
-      answertext : "4"
+      answertext : "`"
+    };
+    
+    var card7 = {
+      card: 7,
+      picture : "Go-Live.png",
+      answertext : "l"
+    };
+    
+    var card8 = {
+      card: 8,
+      picture : "Reset.png",
+      answertext : "`"
+    };
+
+    var card9 = {
+      card: 9,
+      picture : "Left_possession.png",
+      answertext : "1"
+    };
+
+    var card10 = {
+      card: 10,
+      picture : "Right_possession.png",
+      answertext : "2"
     };
 
     deck.push(card1);
