@@ -31,7 +31,7 @@ $(document).ready(function() {
 
   function ClearText() {
     $("#answer").val("");
-    $("#status").html("Time's ticking");
+    $("#status").html("Try again");
   }
 
   function startGame() {
