@@ -30,7 +30,7 @@ $(document).ready(function() {
 
   function ClearText() {
     $("#answer").val("");
-    $("#status").html("X");
+    $("#status").html("Incorrect");
   }
 
   function startGame() {

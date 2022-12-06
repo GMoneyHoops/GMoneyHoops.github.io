@@ -1,9 +1,9 @@
 .timer {
     position: absolute;
-    top: 5cm;
+    top: 10cm;
+    left: 40cm;
     text-align: center;
     font-size: 3rem;
     color: #fffff;
     font-weight: bold;
-    font: montserrat; 
 }
