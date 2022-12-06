@@ -13,12 +13,10 @@ $(document).ready(function() {
     $("#status").html(useranswer);
     
     if (currcard.answertext == useranswer) {
-      alert("correct");
       ClearText();
       Draw(); // GET the next card
     }
     else {
-      alert("try again");
       ClearText();
       $("#status").html("Try again");
     }
