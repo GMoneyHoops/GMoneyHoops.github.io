@@ -65,12 +65,53 @@ $(document).ready(function() {
       answertext : "numpad 2"
     };
 
+    var card7 = {
+      card: 7,
+      picture : "Intensity_loop.png",
+      answertext : "numpad 8"
+    };
+    
+    var card8 = {
+      card: 8,
+      picture : "Pause.png",
+      answertext : "numpad 5"
+    };
+        
+    var card9 = {
+      card: 9,
+      picture : "Go.png",
+      answertext : "numpad 9"
+    };
+    var card10 = {
+      card: 10,
+      picture : "Slow.png",
+      answertext : "numpad 6"
+    };
+    
+    var card11 = {
+      card: 11,
+      picture : "Recall_APP.png",
+      answertext : "delete"
+    };
+        
+    var card12 = {
+      card: 12,
+      picture : "Forward_one.png",
+      answertext : "numpad ."
+    };
+
     deck.push(card1);
     deck.push(card2);
     deck.push(card3);
     deck.push(card4);
     deck.push(card5);
     deck.push(card6);
+    deck.push(card7);
+    deck.push(card8);
+    deck.push(card9);
+    deck.push(card10);
+    deck.push(card11);
+    deck.push(card12);
   }
 
   function Draw() {
