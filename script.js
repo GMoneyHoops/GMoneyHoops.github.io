@@ -2,7 +2,6 @@ $(document).ready(function(){
   $("#status").val("hello there");
   $("#a").attr("src", "APP.png");
 });
-
 // script.js
 $(document).ready(function() {
   var deck = new Array();
@@ -43,7 +42,35 @@ $(document).ready(function() {
     clearInterval(timer);
     timer = setInterval(updateTimer, 1000);
   }
+// script.js
+$(document).ready(function() {
+  var deck = new Array();
+  var currcard = null;
 
+  Init();
+  Draw();
+  
+  // EVENT HANDLER
+
+  $("#clickme").click(function() {
+    var useranswer = $("#answer").val();
+    $("#status").html(useranswer);
+    
+    if (currcard.answertext == useranswer) {
+      alert("correct");
+      ClearText();
+      Draw(); // GET the next card
+    }
+    else {
+      alert("try again");
+      ClearText();
+    }
+  });
+
+  function ClearText() {
+    $("#answer").val("");
+    $("#status").html("X");
+  }
 
   function Init() {
     var card1 = {
@@ -54,58 +81,9 @@ $(document).ready(function() {
     
     var card2 = {
       card: 2,
-      picture : "Go-Live.png",
-      answertext : "l"
+      picture : "bart.jpg",
+      answertext : "Bart"
     };
-    
-    var card3 = {
-      card: 3,
-      picture : "Reset.png",
-      answertext : "`"
-    };
-
-    var card4 = {
-      card: 4,
-      picture : "Left_possession.png",
-      answertext : "1"
-    };
-
-    var card5 = {
-      card: 5,
-      picture : "Right_possession.png",
-      answertext : "2"
-    };
-
-    var card6 = {
-      card: 6
-      picture : "APP.png",
-      answertext : "`"
-    };
-    
-    var card7 = {
-      card: 7,
-      picture : "Go-Live.png",
-      answertext : "l"
-    };
-    
-    var card8 = {
-      card: 8,
-      picture : "Reset.png",
-      answertext : "`"
-    };
-
-    var card9 = {
-      card: 9,
-      picture : "Left_possession.png",
-      answertext : "1"
-    };
-
-    var card10 = {
-      card: 10,
-      picture : "Right_possession.png",
-      answertext : "2"
-    };
-
     deck.push(card1);
     deck.push(card2);
     deck.push(card3);
@@ -134,6 +112,8 @@ $(document).ready(function() {
     deck.push(card26);
     deck.push(card27);
     deck.push(card28);
+    deck.push(card29);
+    deck.push(card30);
   }
 
   function Draw() {
@@ -142,38 +122,8 @@ $(document).ready(function() {
   }
 });
 
-// define the time limit
-let TIME_LIMIT = 60;
- 
-// selecting required elements
-let timer_text = document.querySelector("curr_time");
-let timeLeft = TIME_LIMIT;
-let timeElapsed = 0;
-let timer = null;
- 
-  // clear old and start a new timer
-  clearInterval(timer);
-  timer = setInterval(updateTimer, 1000);
-  function resetValues() {
-    timeLeft = TIME_LIMIT;
-    timeElapsed = 0;
-    timer_text.textContent = timeLeft + 's';
-    restart_btn.style.display = "none";
+  function Draw() {
+    currcard  =  deck.shift();
+    $("#a").attr("src", currcard.picture);
   }
-
-  function updateTimer() {
-    if (timeLeft > 0) {
-      // decrease the current time left
-      timeLeft--;
-   
-      // increase the time elapsed
-      timeElapsed++;
-   
-      // update the timer text
-      timer_text.textContent = timeLeft + "s";
-    }
-    else {
-      // finish the game
-      finishGame();
-    }
-  }
+})
