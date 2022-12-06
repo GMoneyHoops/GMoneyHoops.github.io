@@ -12,7 +12,7 @@
   <h4 id="status">Let's go!</h4>
   <img id="a"/>
   <input type=text id="answer" placeholder="Type Key Command Here">
-  <button id="clickme" >Submit</button> 
+  <button id="clickme" >Submit</button>
 </body>
 </div>
   <div class="timer">
@@ -25,27 +25,15 @@
   font-size: 2.75rem;
 }
 <script> 
-  $("#answer").keyup(function(event) {
-    if (event.keyCode === 13) {
-      $("#clickme").click();
-       }
-      });
+  $("#answer").keypress(function(event) {
+            if (event.keyCode === 13) {
+                $("#clickme").click();
+            }
+        });
    
         $("#clickme").click(function() {
-    var useranswer = $("#answer").val();
-    $("#status").html(useranswer);
-    
-    if (currcard.answertext == useranswer) {
-      alert("correct");
-      ClearText();
-      Draw(); // GET the next card
-    }
-    else {
-      alert("try again");
-      ClearText();
-      $("#status").html("Try again");
-    }
-  });
+            alert("submitted");
+        });
     </script> 
 </body>
 </html>
