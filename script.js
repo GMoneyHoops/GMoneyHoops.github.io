@@ -87,7 +87,6 @@ let TIME_LIMIT = 60;
  
 // selecting required elements
 let timer_text = document.querySelector("curr_time");
-
 let timeLeft = TIME_LIMIT;
 let timeElapsed = 0;
 let timer = null;
@@ -99,7 +98,6 @@ let timer = null;
     timeLeft = TIME_LIMIT;
     timeElapsed = 0;
     timer_text.textContent = timeLeft + 's';
-    error_text.textContent = 0;
     restart_btn.style.display = "none";
   }
 
