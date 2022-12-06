@@ -81,3 +81,39 @@ $(document).ready(function() {
     $("#a").attr("src", currcard.picture);
   }
 });
+
+
+function startGame() {
+ 
+  resetValues();
+  updateQuote();
+ 
+  // clear old and start a new timer
+  clearInterval(timer);
+  timer = setInterval(updateTimer, 1000);
+}
+function resetValues() {
+  timeLeft = TIME_LIMIT;
+  timeElapsed = 0;
+ 
+  input_area.value = "";
+  timer_text.textContent = timeLeft + 's';
+  restart_btn.style.display = "none";
+}
+
+function updateTimer() {
+  if (timeLeft > 0) {
+    // decrease the current time left
+    timeLeft--;
+ 
+    // increase the time elapsed
+    timeElapsed++;
+ 
+    // update the timer text
+    timer_text.textContent = timeLeft + "s";
+  }
+  else {
+    // finish the game
+    finishGame();
+  }
+}
