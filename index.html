@@ -6,11 +6,13 @@
 <script charset="utf-8" src="script.js"></script>
   <style type="text/css" media="screen">
     #status {
+      background-color: #fe6500;
       color: #CACACA;
       font-weight: normal;
+      text-align: center;
     }
     * {
-      font-family: Helvetica, Arial, serif;
+      font-family: Montserrat;
     }
     img {
       display: block;
@@ -29,5 +31,14 @@
   <img id="a"/>
   <input type=text id="answer">
   <button id="clickme">Submit</button>
+</textarea>
+<button class="restart_btn"
+onclick="resetValues()">
+Restart
+</button>
+</div>
+<div class="timer">
+  <div class="header_text">Time</div>
+  <div class="curr_time">60s</div>
 </body>
 </html>
