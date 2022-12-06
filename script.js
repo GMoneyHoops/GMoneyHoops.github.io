@@ -53,8 +53,8 @@ $(document).ready(function() {
     
     var card2 = {
       card: 2,
-      picture : "bart.jpg",
-      answertext : "Bart"
+      picture : "Reset.png",
+      answertext : "`"
     };
     deck.push(card1);
     deck.push(card2);
