@@ -100,6 +100,40 @@ $(document).ready(function() {
       answertext : "numpad ."
     };
 
+    var card13 = {
+      card: 13,
+      picture : "Back_one.png",
+      answertext : "numpad 0"
+    };
+    
+    var card14 = {
+      card: 14,
+      picture : "Last_bookmark.png",
+      answertext : "numpad -"
+    };
+        
+    var card15 = {
+      card: 15,
+      picture : "Next_bookmark.png",
+      answertext : "numpad +"
+    };
+    var card16 = {
+      card: 16,
+      picture : "SMARTData_Penalty.png",
+      answertext : "f"
+    };
+    
+    var card17 = {
+      card: 17,
+      picture : "SMARTData_RedCard.png",
+      answertext : "r"
+    };
+        
+    var card18 = {
+      card: 18,
+      picture : "SMARTData_Goal.png",
+      answertext : "g"
+    };
     deck.push(card1);
     deck.push(card2);
     deck.push(card3);
@@ -112,6 +146,12 @@ $(document).ready(function() {
     deck.push(card10);
     deck.push(card11);
     deck.push(card12);
+    deck.push(card13);
+    deck.push(card14);
+    deck.push(card15);
+    deck.push(card16);
+    deck.push(card17);
+    deck.push(card18);
   }
 
   function Draw() {
