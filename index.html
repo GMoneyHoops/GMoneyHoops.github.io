@@ -12,8 +12,8 @@
   <h4 id="status">Let's go!</h4>
   <img id="a"/>
   <input type=text id="answer" placeholder="Type Key Command Here">
-  <button id="clickme">Submit</button>
-  </body>
+  <button id="clickme">Submit</button> 
+</body>
 </div>
   <div class="timer">
     <div class="header_text">Time</div>
@@ -24,5 +24,15 @@
 .curr_time {
   font-size: 2.75rem;
 }
+<script>
+var input = document.getElementById("answer");
+input.addEventListener("keydown", function(event) {
+    if (event.keyCode === 13) {
+        event.preventDefault();
+        document.getElementById("clickme")..click(function() {
+    var useranswer = $("#answer").val();
+    $("#status").html(useranswer)});
+}});
+</script>
 </body>
 </html>

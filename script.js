@@ -134,6 +134,60 @@ $(document).ready(function() {
       picture : "SMARTData_Goal.png",
       answertext : "g"
     };
+
+    var card19 = {
+      card: 19,
+      picture : "SMARTData_MistakenIdentity.png",
+      answertext : "m"
+    };
+    
+    var card20 = {
+      card: 20,
+      picture : "Rewind.png",
+      answertext : "numpad 7"
+    };
+        
+    var card21 = {
+      card: 21,
+      picture : "Open_SMARTData.png",
+      answertext : "ctrl d"
+    };
+
+    var card22 = {
+      card: 22,
+      picture : "Open_Pending Archives.png",
+      answertext : "alt g"
+    };
+    
+    var card23 = {
+      card: 23,
+      picture : "Open_Audio Panel.png",
+      answertext : "ctrl z"
+    };
+        
+    var card24 = {
+      card: 24,
+      picture : "Open_CaptureStatusControl.png",
+      answertext : "alt v"
+    };
+    var card25 = {
+      card: 25,
+      picture : "Toggle-All-Recording.png",
+      answertext : "ctrl shift r"
+    };
+    
+    var card26 = {
+      card: 26,
+      picture : "SMARTData_Kick-Off.png",
+      answertext : "k"
+    };
+        
+    var card27 = {
+      card: 27,
+      picture : "Check_APP.png",
+      answertext : "delete"
+    };
+    
     deck.push(card1);
     deck.push(card2);
     deck.push(card3);
@@ -152,6 +206,15 @@ $(document).ready(function() {
     deck.push(card16);
     deck.push(card17);
     deck.push(card18);
+    deck.push(card19);
+    deck.push(card20);
+    deck.push(card21);
+    deck.push(card22);
+    deck.push(card23);
+    deck.push(card24);
+    deck.push(card25);
+    deck.push(card26);
+    deck.push(card27);
   }
 
   function Draw() {
