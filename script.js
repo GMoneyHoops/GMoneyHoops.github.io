@@ -91,15 +91,11 @@ let timer_text = document.querySelector(".curr_time");
 let timeLeft = TIME_LIMIT;
 let timeElapsed = 0;
 let timer = null;
-function startGame() {
- 
-  resetValues();
-  updateQuote();
  
   // clear old and start a new timer
   clearInterval(timer);
   timer = setInterval(updateTimer, 1000);
-}
+  
 function resetValues() {
   timeLeft = TIME_LIMIT;
   timeElapsed = 0;
