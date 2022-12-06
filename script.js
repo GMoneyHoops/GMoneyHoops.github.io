@@ -86,7 +86,7 @@ $(document).ready(function() {
 let TIME_LIMIT = 60;
  
 // selecting required elements
-let timer_text = document.querySelector(".curr_time");
+let timer_text = document.querySelector("curr_time");
 
 let timeLeft = TIME_LIMIT;
 let timeElapsed = 0;
@@ -95,33 +95,27 @@ let timer = null;
   // clear old and start a new timer
   clearInterval(timer);
   timer = setInterval(updateTimer, 1000);
-  
-function resetValues() {
-  timeLeft = TIME_LIMIT;
-  timeElapsed = 0;
- 
-  input_area.value = "";
-  timer_text.textContent = timeLeft + 's';
-  restart_btn.style.display = "none";
-}
+  function resetValues() {
+    timeLeft = TIME_LIMIT;
+    timeElapsed = 0;
+    timer_text.textContent = timeLeft + 's';
+    error_text.textContent = 0;
+    restart_btn.style.display = "none";
+  }
 
-function updateTimer() {
-  if (timeLeft > 0) {
-    // decrease the current time left
-    timeLeft--;
- 
-    // increase the time elapsed
-    timeElapsed++;
- 
-    // update the timer text
-    timer_text.textContent = timeLeft + "s";
+  function updateTimer() {
+    if (timeLeft > 0) {
+      // decrease the current time left
+      timeLeft--;
+   
+      // increase the time elapsed
+      timeElapsed++;
+   
+      // update the timer text
+      timer_text.textContent = timeLeft + "s";
+    }
+    else {
+      // finish the game
+      finishGame();
+    }
   }
-  else {
-    // finish the game
-    finishGame();
-  }
-}
-function finishGame() {
-  // stop the timer
-  clearInterval(timer);
-}
