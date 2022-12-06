@@ -20,7 +20,7 @@ $(document).ready(function() {
     if (currcard.answertext == useranswer) {
       alert("correct");
       ClearText();
-      $("#status").html("Correct","on to the next one","well done","check complete");
+      $("#status").html("Check complete");
       Draw(); // GET the next card
     }
     else {
@@ -82,7 +82,15 @@ $(document).ready(function() {
   }
 });
 
+// define the time limit
+let TIME_LIMIT = 60;
+ 
+// selecting required elements
+let timer_text = document.querySelector(".curr_time");
 
+let timeLeft = TIME_LIMIT;
+let timeElapsed = 0;
+let timer = null;
 function startGame() {
  
   resetValues();
@@ -116,4 +124,8 @@ function updateTimer() {
     // finish the game
     finishGame();
   }
+}
+function finishGame() {
+  // stop the timer
+  clearInterval(timer);
 }
