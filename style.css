@@ -1,0 +1,8 @@
+.timer {
+    position: absolute;
+    top: 5cm;
+    text-align: center;
+    font-size: 3rem;
+    color: #fffff;
+    font-weight: bold;
+}
