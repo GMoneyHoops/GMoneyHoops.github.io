@@ -20,6 +20,7 @@ $(document).ready(function() {
     if (currcard.answertext == useranswer) {
       alert("correct");
       ClearText();
+      $("#status").html("Correct","on to the next one","well done","check complete");
       Draw(); // GET the next card
     }
     else {
@@ -30,7 +31,7 @@ $(document).ready(function() {
 
   function ClearText() {
     $("#answer").val("");
-    $("#status").html("Incorrect");
+    $("#status").html("Time's ticking");
   }
 
   function startGame() {
@@ -54,10 +55,25 @@ $(document).ready(function() {
     var card2 = {
       card: 2,
       picture : "Reset.png",
-      answertext : "`"
+      answertext : "2"
     };
+    
+    var card3 = {
+      card: 3,
+      picture : "Reset.png",
+      answertext : "3"
+    };
+
+    var card4 = {
+      card: 4,
+      picture : "APP.png",
+      answertext : "4"
+    };
+
     deck.push(card1);
     deck.push(card2);
+    deck.push(card3);
+    deck.push(card4);
   }
 
   function Draw() {
