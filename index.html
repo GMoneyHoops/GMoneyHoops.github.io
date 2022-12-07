@@ -5,7 +5,61 @@
 <script charset="utf-8" src="jquery-3.6.1.js"></script>
 <script charset="utf-8" src="script.js"></script>
 <h1 id="Title">Hawk-eye Key Commands Quiz</h1>
-<link href="styles.css" rel="stylesheet" />
+<style type="text/css" media="screen">
+
+  .curr_time {
+    font-size: 2.75rem;
+  }
+#Title {
+  background-color: #fe6500;
+  color: #fffff;
+  font-weight: bold;
+  text-align: center;
+  font-size: 48pt;
+  }
+.timer {
+    position: absolute;
+    top: 10cm;
+    left: 40cm;
+    text-align: center;
+    font-size: 3rem;
+    color: #fffff;
+    font-weight: bold;
+    background-color: #7d7d7d;
+    height: 110px;
+    width: 100px;
+    margin: 8px;
+    padding: 12px;
+    border-radius: 10%;
+    box-shadow: black 5px 8px 5px;
+}
+.curr_time {
+  font-size: 2.75rem;
+}
+#status {
+  background-color: #fe6500;
+  color: #fffff;
+  font-weight: normal;
+  text-align: center;
+  font-size: 36pt;
+}
+img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 30%;
+  margin-top: 50px;
+}
+body {
+  margin: 0 auto;
+  width: 80%;
+  background-color: #e0e0e0;
+  color: black;
+  text-align: center;
+}
+#answer {
+  align-items: center;
+}
   </style>
 </head>
 <body>
@@ -15,15 +69,12 @@
   <button id="clickme" >Submit</button>
 </body>
 </div>
+
   <div class="timer">
     <div class="header_text">Time</div>
     <div class="curr_time">60s</div>
   </div>
-  <style type="text/css" media="screen">
 
-.curr_time {
-  font-size: 2.75rem;
-}
 </style>
 <script> 
   $("#answer").keypress(function(event) {
