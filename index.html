@@ -4,21 +4,23 @@
 <head>
 <script charset="utf-8" src="jquery-3.6.1.js"></script>
 <script charset="utf-8" src="script.js"></script>
-<h1 id="Title">Hawk-eye Key Commands Quiz</h1>
+<h1 id="Title">Soccer Key Commands Quiz </h1>
 <h2>
   <div id="app"></div>
 </h2>
 <style type="text/css" media="screen">
-body {
-  background-image: url("Hawkeye-Full-Logo-Black-KO.png");
-  background-repeat: no-repeat;
+  body {
+  background-image: url("Q2.jpg");
   background-attachment: fixed;
-  background-size: cover;
+  background-size: 100%;
+  background-repeat: no-repeat;
 }
-  .curr_time {
-    font-size: 2.75rem;
-  }
 #Title {
+  background-image: url("Hawkeye-Full-Logo-Black-KO.png");
+  background-size: 8%;
+  background-repeat: no-repeat;
+  background-position-x: 39cm;
+  background-position-y: .1cm;
   background-color: #fe6500;
   color: #fffff;
   font-weight: normal;
@@ -28,6 +30,7 @@ body {
 
 #status {
   position: relative;
+  top: -10.5cm;
   margin-left: auto;
   margin-right: auto;
   border: #fe6500;
@@ -42,6 +45,8 @@ body {
 }
 img {
   display: block;
+  position: relative;
+  top: -12cm;
   margin-left: auto;
   margin-right: auto;
   width: 30%;
@@ -53,7 +58,9 @@ body {
   color: black;
   text-align: center;
 }
-#answer {
+#answer, #clickme {
+  position: relative;
+  top: -11.5cm;
   align-items: center;
 }
 #h2 {
@@ -64,10 +71,8 @@ body {
   
 }
 .base-timer {
-  position: absolute;
-  top: 8.5cm;
-  left: 40cm;
-  margin-right: auto;
+  position: relative;
+  margin-left: auto;
   width: 300px;
   height: 300px;
 }
