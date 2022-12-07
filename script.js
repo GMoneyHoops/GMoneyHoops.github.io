@@ -9,8 +9,6 @@ $(document).ready(function() {
   // EVENT HANDLER
 
   $("#clickme").click(function() {
-    var useranswer = $("#answer").val();
-    $("#status").html(useranswer);
     
     if (currcard.answertext == useranswer) {
       ClearText();
