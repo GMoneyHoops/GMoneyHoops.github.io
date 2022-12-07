@@ -5,6 +5,9 @@
 <script charset="utf-8" src="jquery-3.6.1.js"></script>
 <script charset="utf-8" src="script.js"></script>
 <h1 id="Title">Hawk-eye Key Commands Quiz</h1>
+<h2>
+  <div id="app"></div>
+</h2>
 <style type="text/css" media="screen">
 
   .curr_time {
@@ -17,25 +20,7 @@
   text-align: center;
   font-size: 48pt;
   }
-.timer {
-    position: absolute;
-    top: 10cm;
-    right: 5cm;
-    text-align: center;
-    font-size: 3rem;
-    color: #fffff;
-    font-weight: bold;
-    background-color: #7d7d7d;
-    height: 110px;
-    width: 100px;
-    margin: 8px;
-    padding: 12px;
-    border-radius: 10%;
-    box-shadow: black 5px 8px 5px;
-}
-.curr_time {
-  font-size: 2.75rem;
-}
+
 #status {
   position: relative;
   margin-left: auto;
@@ -67,6 +52,67 @@ body {
 #answer {
   align-items: center;
 }
+#h2 {
+  position: relative;
+  margin-right: auto;
+  font-family: sans-serif;
+  display: grid;
+  height: 100vh;
+}
+.base-timer {
+  position: relative;
+  margin-right: auto;
+  width: 300px;
+  height: 300px;
+}
+
+.base-timer__svg {
+  transform: scaleX(-1);
+}
+
+.base-timer__circle {
+  fill: none;
+  stroke: none;
+}
+
+.base-timer__path-elapsed {
+  stroke-width: 7px;
+  stroke: grey;
+}
+
+.base-timer__path-remaining {
+  stroke-width: 7px;
+  stroke-linecap: round;
+  transform: rotate(90deg);
+  transform-origin: center;
+  transition: 1s linear all;
+  fill-rule: nonzero;
+  stroke: currentColor;
+}
+
+.base-timer__path-remaining.green {
+  color: rgb(65, 184, 131);
+}
+
+.base-timer__path-remaining.orange {
+  color: orange;
+}
+
+.base-timer__path-remaining.red {
+  color: red;
+}
+
+.base-timer__label {
+  position: relative;
+  margin-right: auto;
+  width: 300px;
+  height: 300px;
+  top: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 48px;
+}
   </style>
 </head>
 <body>
@@ -75,13 +121,6 @@ body {
   <input type=text id="answer" placeholder="Type Key Command Here">
   <button id="clickme" >Submit</button>
 </body>
-</div>
-
-  <div class="timer">
-    <div class="header_text">Time</div>
-    <div class="curr_time">60s</div>
-  </div>
-
 </style>
 <script> 
   $("#answer").keypress(function(event) {
