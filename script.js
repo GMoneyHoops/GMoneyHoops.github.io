@@ -270,7 +270,7 @@ document.getElementById("app").innerHTML = `
   )}</span>
 </div>
 `;
-
+(
 startTimer();
 
 function onTimesUp() {
@@ -334,5 +334,4 @@ function setCircleDasharray() {
   document
     .getElementById("base-timer-path-remaining")
     .setAttribute("stroke-dasharray", circleDasharray);
-}
 });
