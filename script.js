@@ -9,6 +9,8 @@ $(document).ready(function() {
   // EVENT HANDLER
 
   $("#clickme").click(function() {
+    var useranswer = $("#answer").val();
+    $("#status").html(useranswer);
     
     if (currcard.answertext == useranswer) {
       ClearText();
@@ -16,7 +18,7 @@ $(document).ready(function() {
     }
     else {
       ClearText();
-      $("#status").html("Try again");
+      $("#status").html("Try Again");
     }
   });
 
@@ -183,7 +185,7 @@ $(document).ready(function() {
       picture : "Check_APP.png",
       answertext : "delete"
     };
-    
+
     deck.push(card1);
     deck.push(card2);
     deck.push(card3);
@@ -217,7 +219,8 @@ $(document).ready(function() {
     currcard  =  deck.shift();
     $("#a").attr("src", currcard.picture);
   }
-
+});
+  
 // Credit: Mateusz Rybczonec
 
 const FULL_DASH_ARRAY = 283;
