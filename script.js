@@ -221,8 +221,8 @@ $(document).ready(function() {
     }
   });
  
-  // THESE ARE THE ISSUE
-  
+  // THESE ARE THE ISSUE 
+  {
   const FULL_DASH_ARRAY = 283;
   const WARNING_THRESHOLD = 10;
   const ALERT_THRESHOLD = 5;
@@ -246,6 +246,7 @@ $(document).ready(function() {
   let timeLeft = TIME_LIMIT;
   let timerInterval = null;
   let remainingPathColor = COLOR_CODES.info.color;
+}
 
   // ABOVE IS THE ISSUE
   
