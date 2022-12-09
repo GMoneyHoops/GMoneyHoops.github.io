@@ -270,7 +270,7 @@ document.getElementById("app").innerHTML = `
   )}</span>
 </div>
 `;
-(
+
 startTimer();
 
 function onTimesUp() {
